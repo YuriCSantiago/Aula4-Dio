@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+            box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+            border: solid 5px green;
+        }
+
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot td {
+            background-color: aqua;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: #8b7878;
+        }
+
+        table tbody tr:hover td {
+            background-color: #2ace5b;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="250" align="center" cellspacing="0" cellpadding="5">
+
+        <thead>
+            <tr>
+                <th colspan="2">Minha tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr id="1">
+                <td>Yuri</td>
+                <td>26</td>
+            </tr>
+            <tr id="2">
+                <td>João</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td id="3">Maria</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td id="4">Otavio</td>
+                <td>39</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

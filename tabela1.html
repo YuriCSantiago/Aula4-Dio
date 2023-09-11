@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table tr:nth-child(even) {
+            background-color: burlywood;
+        }
+
+        table tr:hover td {
+            background-color: rgb(162, 150, 150);
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" width="250" align="center" cellspacing="15" cellpadding="15"
+        sumary="serve para Resumo dos dados quem tem na tabela">
+        <caption>Tabela de idade dos alunos</caption>
+        <thead>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr id="1">
+                <td>Yuri</td>
+                <td>26</td>
+            </tr>
+            <tr id="2">
+                <td>João</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td id="3">Maria</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td id="4">Otavio</td>
+                <td>39</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
